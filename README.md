@@ -1,14 +1,21 @@
-# **STM32WB Web Bluetooth App Interfaces**
+# **STM32WB Web Bluetooth® App Interfaces**
 
+Two github pages hosting the web app are available:
+-   [Web Bluetooth® **HOME PAGE**](https://applible.github.io/ST-Web-Bluetooth/ "https://applible.github.io/ST-Web-Bluetooth/").
+-   [Web Bluetooth® **STM32WBA**](https://AppliBLE.github.io/Web_Bluetooth_App_WBA "https://AppliBLE.github.io/Web_Bluetooth_App_WBA").
+  
+No installation is required to use it this way.
+
+***
 # **Introduction**
 
 This is a web interface created with [React 18](https://reactjs.org/ "https://reactjs.org/") and [Bootstrap 5](https://getbootstrap.com/ "https://getbootstrap.com/").  
 This web interface using Web Bluetooth® APIs can be used to establish a Bluetooth® LE connection and exchange data with a STM32WB board
 
-STM32WB firmware applications that could be downloaded to interact with Web Bluetooth application:  
+STM32WB firmware applications that could be downloaded to interact with Web Bluetooth® application:  
 
--	P2Pserver
--	[HeartRate](https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_HeartRate "https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_HeartRate")
+-	Peer To Peer Server
+-	[Heart Rate](https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_HeartRate "https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_HeartRate")
 -	Firmware Update Over The Air
 -	Data Throughput
 
@@ -40,16 +47,16 @@ All available coprocessor wireless binaries are located [here](https://github.co
 All available application binaries are available [here](https://github.com/STMicroelectronics/STM32CubeWB/tree/398d0fbc5ef491da30f777575b911e50e68fa77f/Projects/P-NUCLEO-WB55.Nucleo/Applications/BLE "https://github.com/STMicroelectronics/STM32CubeWB/tree/398d0fbc5ef491da30f777575b911e50e68fa77f/Projects/P-NUCLEO-WB55.Nucleo/Applications/BLE").  
 Refer to [UM2237](https://wiki.st.com/stm32mcu/wiki/STM32CubeProg_introduction "https://wiki.st.com/stm32mcu/wiki/STM32CubeProg_introduction") to learn how to install and use STM32CubeProgrammer.  
 
-For more information about Bluetooth® LE please refer to the [STMicroelectronics BLE Wiki](https://wiki.st.com/stm32mcu/wiki/Connectivity:BLE_overview "https://wiki.st.com/stm32mcu/wiki/Connectivity:BLE_overview").
+For more information about Bluetooth® LE please refer to the [STMicroelectronics Bluetooth® LE Wiki](https://wiki.st.com/stm32mcu/wiki/Connectivity:BLE_overview "https://wiki.st.com/stm32mcu/wiki/Connectivity:BLE_overview").
 
 
 ***
 
 # **User's guide**
 
-## **P2Pserver**  
+## **Peer To Peer Server**  
 
-The P2Pserver application demonstrates a bidirectional BLE communication between a client and a server. The P2Pserver interface proposes a set of buttons to interact with the connected device. A reboot panel is available only if a P2Pserver service with the reboot OTA characteristic is detected on the device (see the Firmware Update Over The Air section to have more information related to OTA).  
+The P2P Server application demonstrates a bidirectional Bluetooth® LE communication between a client and a server. The P2P Server interface proposes a set of buttons to interact with the connected device. A reboot panel is available only if a P2P Server service with the reboot OTA characteristic is detected on the device (see the Firmware Update Over The Air section to have more information related to OTA).  
 
 ### **Requierements**
 
@@ -62,14 +69,14 @@ And [this](https://github.com/STMicroelectronics/STM32CubeWB/tree/master/Project
 
 If you don't know how to update the coprocessors firmware, click [here](https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_BLE_Hardware_Setup "https://wiki.st.com/stm32mcu/wiki/Connectivity:STM32WB_BLE_Hardware_Setup").
 
-### **Follow the next steps to learn how to use the application P2Pserver**
+### **Follow the next steps to learn how to use the application P2P Server**
 
 **Step 1.** Power on the STM32WB board with the Ota application flashed in and activate the bluetooth® on your machine.   
 **Step 2.** Open [this](https://applible.github.io/Web_Bluetooth_App "https://applible.github.io/Web_Bluetooth_App") web page in your browser.  
 **Step 3.** Click on the connect button then select P2PSRV1 in the device list and click pair.   
 ![Step 3](illustrations/picture0.png "Step 3")  
 ![Step 3](illustrations/picture1.png "Step 3")  
-**Step 4.** Click on P2Pserver to show the interface and **don't hesitate to read the tooltips**.  
+**Step 4.** Click on P2P Server to show the interface and **don't hesitate to read the tooltips**.  
 *Your are now connected.*  
 *You can now interact with the connected device.*  
 ![Step 4](illustrations/picture5.png "Step 4")  
